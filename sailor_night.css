@@ -1,0 +1,171 @@
+/* SAILOR NIGHT */
+
+/* MAIN STYLES */
+
+body{
+    background-color: #110038;
+}
+
+.headbar{
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    box-shadow: 0 1px 0 0 #110038;
+    color: #FFFFFF;
+}
+button{
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    color: #FFFFFF;
+}
+
+.create_gif_button a:visited{
+    color: #FFFFFF;
+}
+
+.create_gif_button:active{
+    background: #CE36DB;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+/* HOME STYLES */
+.dropdown-content a:hover {
+    background-color: #2E32FB;
+    color: #FFFFFF;
+  }
+
+#M{
+    text-decoration: underline;
+}
+
+.my_gifs_button a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.my_gifs_button{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
+.my_gifs_button a:visited{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.my_gifs_button a:active{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+.my_gifs_button:hover{
+    border: 1px solid #FFFFFF;
+    border-style: dotted;
+}
+
+.theme_select_button{
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    color: #110038;
+}
+
+.theme_select_button:hover{
+    background: #E6BBE2;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.theme_select_options{
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.theme_select_options_container_white option{
+    background: #FFF4FD;
+    border: 1px solid #CCA6C9;
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+
+}
+
+.theme_select_options_container_dark option{
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+
+.search_container{
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.search_input{
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+.seach_button{
+    background: #E6E6E6;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    color: #B4B4B4;
+}
+
+.search_button{
+    background-color: #E6E6E6;
+}
+
+/* SUGGESTIONS STYLES */
+
+.suggestion_box, .trend_box, .myGifs_box, .searchResults_Box, .my_gifs_title_container{
+    background: #FFFAFE;
+    border: 1px solid #2E32FB;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+}
+
+.sug_box{
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.sug_header{
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+
+.see_more_box{
+    background: #4180F6;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+    color: #FFFFFF;
+}
+
+.see_more_box:hover{
+    background: #3A72DB;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+    border-style: dotted;
+
+}
+
+/* TRENDS */
+
+.giphy_trend_container{
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+.trend_header{
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+.trend_header_long{
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+}
+
+
+

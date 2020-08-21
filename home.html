@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="tabLogo" rel="shortcut icon" href="assets/gifOF_logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="homestyles.css">
+    <link rel="stylesheet" href="suggestions.css">
+    <link rel="stylesheet" href="trends.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+    <link id="styleSheet" rel="stylesheet" href="sailor_day.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <link rel="stylesheet" href="gifcapture.css">
+    <title>GifOS</title>
+</head>
+
+<body id="body_home" onload="getGiphysSuggestions() && getGiphysTrends()">
+    <div class="nav_bar_section">
+        <div class="nav_bar">
+            <div class="headbar">¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803
+            </div>
+            <a href="home.html"><img class="gifOF_logo" id="gifOF_logo_light" src="assets/gifOF_logo.png" alt=""></a>
+            <button class="my_gifs_button nav_bar_button" onclick="myGifView()"><span id="M">M</span>is
+                Guifos</button>
+            <a class="myGifostext" href="mygifos.html" target="_blank"></a>
+            <div class="selectContainer">
+                <div class="dropdown">
+                    <div class="theme_select_box">
+                        <button class="create_gif_button nav_bar_button"> <span>Elegir Tema</span><img
+                                src="assets/dropdown.svg" class="dropdown_arrow" id="dropdownArrow" alt=""></button>
+                    </div>
+                    <div class="dropdown-content">
+                        <div class="sailorOptionContainer">
+                            <a href="#" id="sailorDayOption" onclick="sailorDay()">Sailor Day</a>
+                        </div>
+                        <div class="sailorOptionContainer">
+                            <a href="#" id="sailorNightOption" onclick="sailorNight()">Sailor Night</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="create_gif_button nav_bar_button" id="createGifBtn">Crear Guifos</button>
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- SEARCH SECTION -->
+    <div class="search_section">
+        <div class="search_container">
+            <div class="headbar">Buscar</div>
+            <input class="search_input" id="searchInput" type="text" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" autocomplete="off" onkeyup="getGiphySearchSuggs()">
+            <button class="searchButton" id="searchBtn" onclick="getGiphys()" disabled><img id="magGlass"
+                    src="assets/lupa_inactive.svg" class="mag_glass" alt="">Buscar</button>
+            <div class="searchSuggestions">
+                <button class="individual_search_suggestion"></button>
+                <button class="individual_search_suggestion"></button>
+                <button class="individual_search_suggestion"></button>
+            </div>
+        </div>
+        <!-- SEARCH SUGGESTIONS -->
+        <div class="searchResultsContainer">
+            <button class="results_box"></button>
+            <button class="results_box"></button>
+            <button class="results_box"></button>
+        </div>
+    </div>
+    <!-------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- SUGGESTIONS -->
+    <div class="suggestions">
+        <div class="suggestion_box">Hoy te sugerimos:</div>
+        <div class="suggestionsContainer" id="suggestions_Container">
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------>
+    <!-- TRENDS SECTION -->
+    <div class="trends_section">
+        <div class="trend_box">Tendencias:</div>
+        <div class="trendsContainer" id="trends_container">
+        </div>
+    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------->
+    <!-- SEARCH RESULTS -->
+    <div id="search_results_section">
+        <div class="searchResults_Box">Resultados de Busqueda:</div>
+        <div class="gifResultsContainer" id="gif_results_container">
+        </div>
+    </div>
+    <!-------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- GIF CREATION SECTION -->
+    <div class="gif_creation_section">
+        <div class="createGifAdvisory">
+            <div class="headbar">Crear Guifos</div>
+            <div class="subheadbar_container">
+                <div class="title_container">
+                    <img class="windows_logo" src="assets/window_img.png" alt="">
+                    <h1>Aquí podrás crear tus propios guifos</h1>
+                </div>
+                <div class="text_container">
+                    <p>Crear tu <span class="bold italic">guifo</span> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son: <br>
+                        <span class="bold">1)</span> Dar permisos de acceso a la cámara (sólo por el tiempo de uso) <br>
+                        <span class="bold">2)</span> Capturar tu momento guifo <br>
+                        <span class="bold">3)</span> Revisar el momento <br>
+                        <span class="bold">4)</span> Listo para subir y compartir! <br> ¿Quieres comenzar a crear tu <span class="bold italic">guifo</span> ahora?</p>
+                </div>
+                <button class="button" id="cancel_gif_record">Cancelar</button>
+                <button class="button" id="begin_gif_record">Comenzar</button>
+            </div>
+        </div>
+        <br>
+        <!-- --------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="check_video_container">
+            <div class="headbar">Un Chequeo Antes de Empezar<img class="close_button" src="assets/close.svg" alt=""></div>
+            <div class="check_video_box">
+                <video src="" id="video_preview" class="" autoplay="true"></video>
+                <video src="" id="gif_preview" autoplay="true"></video>
+            </div>
+            <div class="buttons_container">
+                <button class="button" id="upload_gif">Subir gifOs</button>
+                <button class="button" id="redo_gif">Repetir Captura</button>
+                <button class="button" id="start_rec">Capturar <img src="assets/camera.svg" alt=""
+                    class="camera_logo"></button>
+                <button class="stop_recording_button button" id="stop_rec">Listo<img src="assets/recording.svg" alt=""
+                    class="recording_icon"></button>
+                <button class="" id="playGif"><img src="assets/forward.svg" alt=""></button>
+                <div class="infobox">
+                    <p class="infobox_text"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="final_gif_container">
+            <div class="headbar">Guifo Subido Con Éxito</div>
+            <div class="final_gif_title">
+                <p>Guifo creado con éxito</p>
+            </div>
+            <div class="gif_box"><img id="final_gif" src="" alt=""></div>
+            <button class="button" id="copy_link">Copiar Enlace Guifo</button>
+            <button class="button" id="dwnld_gif">Descargar Guifo</button>
+            <button class="button" id="end_gif_run" onclick="myGifView()">Listo</button>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- MY GIFS -->
+    <div class=" my_gifs_section">
+        <div class="my_gifs_title_container ">Mis GuifOs</div>
+        <div id="my_gifs_container"></div>
+        <div class="my_gifs_del">DELETE GIF!<br>To delete a Gif, copy name at top of each gif and paste here then press "DELETE"<br><input id="del_gif_input" type="text"><button class="button" id="del_gif_btn">DELETE</button></div>
+    </div>
+
+</body>
+
+<script src="gifOs.js "></script>
+<script src="https://www.WebRTC-Experiment.com/RecordRTC.js "></script>
+
+</html>

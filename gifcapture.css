@@ -1,0 +1,233 @@
+.my_gifs_section {
+    display: none;
+}
+
+.createGifAdvisory {
+    height: 386px;
+    width: 684px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    font-family: 'Chakra Petch', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    display: none
+}
+
+h1 {
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-family: 'Chakra Petch Bold', sans-serif;
+}
+
+.title_container {
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+.text_container {
+    width: 518px;
+    height: 190px;
+    font-family: 'ChakraPetch-Regular', sans-serif;
+    font-size: 14px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-left: 6em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+
+.check_video_container {
+    height: 548px;
+    width: 860px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    display: none
+}
+
+.close_button {
+    float: right;
+    margin-top: 0.05em;
+    margin-right: 0.2em;
+}
+
+.check_video_box {
+    width: 832px;
+    height: 434px;
+    background-color: #B4B4B4;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+
+#video_preview {
+    height: 434px;
+    width: 832px;
+}
+
+.time_box {
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    height: 36px;
+    width: 124px;
+    margin-top: 1.5em;
+    margin-left: 1em;
+    float: left;
+}
+
+#recording_time {
+    padding-left: 3em;
+}
+
+.stop_recording_button {
+    background: #FF6161;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+.final_gif_container {
+    width: 721px;
+    height: 391px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    display: none
+}
+
+.gif_box {
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    height: 196px;
+    width: 371px;
+    margin-top: 2.5em;
+    margin-left: 2.5em;
+    margin-bottom: 1em;
+}
+
+#final_gif {
+    height: 196px;
+    width: 371px;
+}
+
+.final_gif_title p {
+    font-family: 'ChakraPetch', sans-serif;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-weight: bold;
+    padding-top: 1em;
+    margin-left: 3em;
+}
+
+.recording_icon,
+.camera_logo {
+    padding-left: 0.5em;
+    margin-right: -2em;
+    margin-top: 0em;
+    height: 17px;
+    width: 17px;
+}
+
+.infobox {
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    width: 124px;
+    height: 36px;
+    margin-left: 1em;
+    margin-top: 1em;
+    color: #000000;
+}
+
+.infobox_text {
+    font-family: 'ChakraPetch', sans-serif;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-size: 10px;
+    padding-left: 1em;
+}
+
+.buttons_container {
+    margin-top: 1em
+}
+
+#playGif {
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 18px;
+    position: relative;
+    float: right;
+    margin-right: 1em;
+}
+
+#my_gifs_container {
+    display: grid;
+    margin-left: 5em;
+    margin-right: auto;
+    margin-top: 1em;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.my_gif_box {
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    width: 288px;
+    height: 313px;
+    margin-bottom: 1em;
+}
+
+.gif_header {
+    width: 280px;
+    height: 24px;
+    padding-left: 1em;
+    padding-top: 0.2em;
+}
+
+.my_gif_img {
+    margin-left: 0.28em;
+    width: 280px;
+    height: 280px;
+}
+
+.my_gifs_del {
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    width: 800px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+.del_gif_input {
+    margin-left: auto;
+    margin-right: auto;
+}

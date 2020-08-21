@@ -1,0 +1,40 @@
+.trendsContainer {
+    margin-left: 5em;
+    margin-top: 1.5em;
+}
+
+.trendsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0.7em;
+    grid-row-gap: 0.7em;
+}
+
+.giphy_trend_container {
+    height: 204px;
+    width: 294px;
+}
+
+.trend_header {
+    width: 294px;
+    height: 25px;
+    margin-top: -1.8em;
+    margin-left: 0.05em;
+    position: absolute;
+    color: white;
+    font-size: small;
+    display: none;
+}
+
+.trend_header_title {
+    padding-left: 1em;
+    margin-top: 0em;
+}
+
+.trendImg {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+}

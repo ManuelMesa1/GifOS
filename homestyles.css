@@ -1,0 +1,251 @@
+/* MAIN STYLES */
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.headbar {
+    font-family: 'Chakra Petch', sans-serif;
+    padding-left: 1em;
+}
+
+.nav_bar_button {
+    font-family: 'Chakra Petch', sans-serif;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    position: relative;
+    float: right;
+    margin-top: 2em;
+    margin-right: 1em;
+}
+
+.button {
+    font-family: 'Chakra Petch', sans-serif;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    position: relative;
+    float: right;
+    /* margin-top: 2em; */
+    margin-right: 1em;
+}
+
+.gifOF_logo {
+    width: auto;
+    height: auto;
+    margin-left: 5em;
+    margin-top: 2em;
+}
+
+
+/* .nav_bar_button{
+} */
+
+.create_gif_button a {
+    text-decoration: none;
+}
+
+.create_gif_button a:visited {
+    text-decoration: none;
+}
+
+.selectContainer {
+    float: right;
+}
+
+.sailorOptionContainer {
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+
+/* HOME STYLES */
+
+#M {
+    text-decoration: underline;
+}
+
+.my_gifs_button a {
+    text-decoration: none;
+}
+
+.my_gifs_button {
+    background: none;
+    border: none;
+    box-shadow: none;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 18px;
+    margin-right: 5em;
+}
+
+.my_gifs_button a:hover {
+    border: 1px solid #110038;
+    border-style: dotted;
+}
+
+.my_gifs_button a:visited {
+    text-decoration: none;
+}
+
+.my_gifs_button a:active {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
+.theme_select_button {
+    font-family: 'Chakra Petch', sans-serif;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-left: 1.8em;
+    padding-right: 1.8em;
+    font-size: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    position: relative;
+    float: right;
+    margin-top: 1.75em;
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.search_container {
+    width: 1200px;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 2em;
+}
+
+.search_input {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    width: 85%;
+    height: 40px;
+    padding-left: 1em;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.searchButton {
+    float: right;
+    margin-top: 1em;
+    margin-right: 1em;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 16px;
+    color: #B4B4B4;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
+.mag_glass {
+    padding-right: 0.1em;
+}
+
+.searchButton {
+    border: none;
+    font-family: 'Chakra Petch', sans-serif;
+    color: #B4B4B4;
+    background-color: #E6E6E6;
+}
+
+.searchSuggestions {
+    display: none;
+    padding-bottom: 0.5em;
+    height: 160px;
+    width: 1200px;
+    padding-top: 1em;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.individual_search_suggestion {
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    width: 1036px;
+    height: 36px;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    color: #110038;
+}
+
+.searchResults_Box {
+    margin-top: 5em;
+    padding-left: 1em;
+    margin-left: 5em;
+    padding-top: 0.25em;
+    padding-bottom: 0.4em;
+}
+
+.searchResultsContainer {
+    margin-left: 5em;
+    display: none;
+    float: left;
+}
+
+.results_box {
+    background: #4180F6;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+    height: 34px;
+    width: 154px;
+    display: inline-flex;
+    flex-direction: row;
+    margin-top: 1em;
+    color: #FFFFFF;
+    padding-left: 1em;
+    padding-top: 0.5em;
+}
+
+.searchGifResultBox {
+    width: 288px;
+    height: 298px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    display: inline-flex;
+    flex-direction: row;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.searchGifResultInd {
+    width: 288px;
+    height: 298px;
+}
+
+.gifResultsContainer {
+    margin-left: 5em;
+    margin-top: 1em;
+}
+
+#search_results_section {
+    display: none;
+}
+
+.dropdown_arrow {
+    margin-left: 0.5em;
+    margin-right: 0em;
+}
+
+.theme_select_box {
+    display: block;
+}

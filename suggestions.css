@@ -1,0 +1,97 @@
+/* SUGGESTIONS STYLES */
+
+.suggestion_box,
+.trend_box,
+.myGifs_box,
+.searchResults_Box,
+.my_gifs_title_container {
+    background: #FFFAFE;
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+    margin-top: 4em;
+    margin-left: 5em;
+    margin-right: auto;
+    width: 1200px;
+    height: 25px;
+    padding-left: 0.5em;
+    padding-top: 0.2em;
+}
+
+.suggestionsContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5em;
+    margin-top: 1.2em;
+}
+
+.sug_box {
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    width: 288px;
+    height: 313px;
+    margin-right: 1.4em;
+}
+
+.sug_header {
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    width: 288px;
+    height: 25px;
+    margin-left: 0em;
+    color: #FFFFFF;
+}
+
+.sug_header_title {
+    padding-left: 1em;
+    height: 1px;
+}
+
+.sugImg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 0.3em;
+}
+
+.giphy_container {
+    width: 280px;
+    height: 280px;
+    text-align: center;
+    margin: auto;
+}
+
+.giphy_container:hover {
+    border: 1px solid #110038;
+    border-style: dotted;
+}
+
+.see_more_box {
+    background: #4180F6;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    margin-top: -2.5em;
+    margin-right: 11em;
+}
+
+.sug_close_button {
+    float: right;
+    margin-top: 0.445em;
+    margin-right: 0.445em;
+}
+
+#sug_box_two,
+#sug_box_three,
+#sug_box_four {
+    margin-left: 1.125em;
+}
+
+.individual_search_suggestion:hover {
+    border: 1px solid #110038;
+    background: #DBDBDB;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
