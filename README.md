@@ -1,7 +1,8 @@
 # acamica-gifos
-THIS IS THE SECOND PROYECT DURING THE WEB DEVELOPMENT FULLSTACK COURSE AT ACAMICA ACADEMY!
+Hello, this is the second project during the FullStack Web Developer Course at Acamica Academy.
 
-UP UNTIL THIS MOMENTO THE PROJECT IS NOT FINISH, BUT IM ALMOST THERE!
+API Giphy Implemented availble at https://developers.giphy.com/
+Library used is RecordRTC, available at https://recordrtc.org/
 
-THANKS!
+Thanks!
 "# GifOS" 
